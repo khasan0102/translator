@@ -1,0 +1,15 @@
+---
+application:
+  name: "translator"
+  project: "translator-ogabek"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "nimadir"
+  version: "4.4"
+routers:
+- name: "main-translator"
+  routes:
+  - application_name: "translator"
+    paths:
+    - "/*"
